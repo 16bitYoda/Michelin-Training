@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+}
+
+body {
+  background-color: #e8e8e8;
+  width: 414px;
+}
+
+header {
+  background-color: #005b90;
+  color: white; /*---------------------- header text color */
+  height: fit-content;
+  padding: 1rem 2rem;
+}
+
+.p1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+}
+
+#logo {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: flex;
+  align-items: center;
+}
+
+#searchBarParent {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: flex;
+  align-items: center;
+}
+#searchBar {
+  width: 100%;
+  height: 33px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  color: grey;
+  background-color: white;
+  padding: 0 1rem;
+}
+
+#userDetails {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.profilePic {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#profilePic {
+  height: 48px;
+  width: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+#welcomeTxt {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+#userName {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+#notificationBar {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#iconParent {
+  width: 40px;
+  height: 40px;
+}
+
+#circle {
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid white; */
+  border-radius: 50%;
+  background-color: white;
+}
+
+#notificationBell {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#notificationBell img {
+  width: 20px;
+  height: 24px;
+}
+
+.stations {
+  padding: 2rem;
+}
