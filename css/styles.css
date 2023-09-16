@@ -2,13 +2,14 @@
   padding: 0;
   margin: 0;
   line-height: 1.5;
+  font-family: sans-serif;
 }
 
 body {
   background-color: #e8e8e8;
   width: 414px;
 }
-
+/*--------------------------------------------------------------------HEADER */
 header {
   background-color: #005b90;
   color: white; /*---------------------- header text color */
@@ -28,7 +29,7 @@ header {
   grid-row-start: 1;
   grid-row-end: 2;
   display: flex;
-  align-items: center;
+  align-items: flex-start; /*------------------- changed from centre */
 }
 
 #searchBarParent {
@@ -59,6 +60,7 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  padding-top: 0.5rem;
 }
 
 .profilePic {
@@ -103,13 +105,14 @@ header {
 }
 
 #notificationBar {
-  grid-column-start: 4;
+  grid-column-start: 3;
   grid-column-end: 5;
   grid-row-start: 2;
   grid-row-end: 3;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  padding-top: 0.5rem;
 }
 
 #iconParent {
@@ -137,7 +140,234 @@ header {
   width: 20px;
   height: 24px;
 }
+/*--------------------------------------------------------------------HEADER */
 
+/*--------------------------------------------------------------------STATIONS */
 .stations {
-  padding: 2rem;
+  padding: 1.5rem 2rem;
+}
+
+.title {
+  padding-bottom: 1.5rem;
+  display: block;
+}
+
+.title h2 {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0 0.5rem;
+  color: rgba(30, 30, 30, 0.8);
+}
+
+.testcontainer {
+  width: 100%;
+  height: 100%;
+}
+
+.testparent {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, auto);
+  align-items: center;
+  justify-items: center;
+}
+.testcircle1 {
+  background-color: #005b90;
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.testcircle2 {
+  background-color: #005b90;
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.testcircle3 {
+  background-color: #005b90;
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.testcircle4 {
+  background-color: #005b90;
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.testcircle5 {
+  background-color: #005b90;
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.testcircle6 {
+  background-color: #005b90;
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.testcircle7 {
+  background-color: #005b90;
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.testcircle8 {
+  background-color: #005b90;
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.testlabel1 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  text-align: center;
+  font-size: 12px;
+  padding: 0.2rem 0.5rem;
+  color: rgba(30, 30, 30, 0.8);
+}
+
+.testlabel2 {
+  grid-row-start: 4;
+  grid-row-end: 5;
+  text-align: center;
+  font-size: 12px;
+  padding: 0.5rem 0.5rem;
+  color: rgba(30, 30, 30, 0.8);
+}
+/*--------------------------------------------------------------------STATIONS */
+/*--------------------------------------------------------------------YOUR LEARNING */
+.yourLearning {
+  padding: 1.5rem 2rem;
+  padding-top: 0;
+}
+
+.parentContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.optionParent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.options {
+  height: 105px;
+  width: 105px;
+  background-color: #bebfbe;
+  border-radius: 16px;
+  border: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.theIcon {
+  border: 1px solid black;
+  width: 80px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconLabel {
+  height: 37.5px;
+  text-align: center;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: rgba(30, 30, 30, 0.8);
+}
+/*--------------------------------------------------------------------YOUR LEARNING */
+/*--------------------------------------------------------------------RECOMMENDED */
+.recommendedStations {
+  padding: 1.5rem 2rem;
+  padding-top: 0;
+}
+
+.recommendedStationsContainer {
+  width: 100%;
+  height: 1005;
+}
+
+.recommendedStationsParent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recommendedStationsChild {
+  background-color: #bebfbe;
+  width: 160px;
+  height: 160px;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+.recommendedStationsOptions {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.theIcon1 {
+  width: 140px;
+  height: 90px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconLabel1 {
+  width: 90%;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 14px;
+  color: rgba(30, 30, 30, 0.8);
 }
